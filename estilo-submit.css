@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(dashboard.jpeg);
+    background-size: 80em;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-family: 'Chakra Petch';
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 700px;
+    height: 90em;
+    border: 2px solid #e1e1e6;
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: rgba(0, 0, 0, 1) 4px 0 8px 3px;
+}
+
+.mensagem-resultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: #000;
+}
+
+.container-avaliacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(68, 106, 219, 0.253);
+    border-radius: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.textoAvaliacao {
+    font-size: 45px;
+}
+
+form {
+    text-align: center;
+    width: 350px;
+    height: 200px;
+}
+
+.star-icon {
+    display: inline-block;
+    font-size: 65px;
+    cursor: pointer;
+    color: gold;
+    /* Cor para estrela não selecionada */
+    transition: color 0.2s;
+}
+
+#botaoEnviarAvaliacao {
+    position: relative;
+    top: 20px;
+}
+
+.container-avaliacao.hidden {
+    display: none;
+    /* Esconde o container de avaliação quando a classe "hidden" é adicionada */
+}
+
+.container-botaoFinal {
+    display: none;
+    /* Inicialmente escondido */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 350px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.container-botaoFinal.visible {
+    display: flex;
+    /* Mostra os botões quando a classe "visible" é adicionada */
+}
+
+.botao-final {
+    background-color: #0ea5e9;
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 6px;
+    height: 98px;
+    width: 300px;
+    padding: 0 32px;
+    transition: filter 0.2s;
+    text-decoration: none;
+    transition: background 0.25s ease-in-out, transform 0.2s;
+}
+
+.botao-final:hover {
+    background-color: #007ac1;
+    transform: scale(1.05);
+}
+
+#mensagemAvaliacao {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+    width: 500px;
+    height: 100´x;
+}
+
+#mensagemAvaliacao.success {
+    background-color: #f3ebeb;
+    color: #26cd08;
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-size: 110em;
+    }
+
+    .container {
+        gap: 30px;
+        width: 55em;
+        height: 600px;
+    }
+
+    .mensagem-resultado {
+        height: 100px;
+        font-size: 30px;
+    }
+
+    .container-avaliacao {
+        justify-content: space-around;
+        width: 300px;
+        height: 210px;
+    }
+    .textoAvaliacao{
+        font-size: 28px;
+    }
+    .star-icon {
+        font-size: 40px;
+    }
+
+    form {
+        width: 250px;
+        height: 180px;
+    }
+    .container-botaoFinal{
+        width: 100%;
+        height: 150px;
+    }
+    .botao-final{
+        font-size: 16px;
+        height: 48px;
+        width: 180px;
+    }
+    #mensagemAvaliacao{
+        font-size: 20px;
+        width: 380px;
+    }
+}

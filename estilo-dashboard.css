@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(dashboard.jpeg);
+    background-size: 30em;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Chakra Petch';
+}
+.container{
+    width:300px;
+    height: 600px;
+    border: 2px solid #e1e1e6;
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: 0 0 2px 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 1) 4px 0 8px 3px;
+    color: #121525;
+}
+.instrucao{
+    width: 200px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 12px;
+}
+.instrucao h1{
+    font-size: 19px;
+}
+.mensagem-instrucao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.mensagem-instrucao h2{
+    font-size: 17px;
+}
+.como-jogar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.ganhos-especiais{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 5px;
+}
+
+.container-controle{
+    display: flex;
+    gap: 16px; /* Adiciona espaço entre os botões */
+    margin-top: 24px; /* Adiciona um pouco de espaço acima dos controles */
+    justify-content: center; /* Centraliza os botões */
+    align-items: center;
+    flex-direction: row;
+    
+}
+.botao{
+    background-color: #0ea5e9;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    height: 48px;
+    padding: 0 32px;
+    transition: filter 0.2s;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media (min-width: 1024px){
+    body{
+        background-size: 110em;
+    }
+    .container{
+        width: 55em;
+        height: 600px;
+    }
+    .instrucao{
+        width: 600px;
+        height: 500px;
+        font-size: 18px;
+    }
+    .instrucao h1{
+        font-size: 32px;
+    }
+    .mensagem-instrucao h2{
+        font-size: 30px;
+    }
+    .ganhos-especiais{
+        right: 153px;
+    }
+}
